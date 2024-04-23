@@ -3,6 +3,7 @@ from pytube import YouTube, Playlist
 import os
 
 janela = Tk()
+janela.title("NameDownloader")
 
 janela.geometry("300x100")
 
@@ -44,6 +45,7 @@ def unico():
     global entradaU, janelaUnico
     janelaUnico = Tk()
     janelaUnico.geometry("300x100")
+    janelaUnico.title("NameDownloader")
     entradaU = Entry(janelaUnico, width=30)
     entradaU.pack(pady=10)
     botao = Button(janelaUnico, text="Download", command=DownloadUnico)
@@ -54,6 +56,7 @@ def playlist():
     global entradaP, janelaP
     janelaP = Tk()
     janelaP.geometry("300x100")
+    janelaP.title("NameDownloader")
     entradaP = Entry(janelaP, width=30)
     entradaP.pack(pady=10)
     botao = Button(janelaP, text="Download", command=DownloadPlaylist)
